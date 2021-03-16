@@ -1,0 +1,94 @@
+html, body {
+    margin: 50px;
+    padding: 0;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+ display: block;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+
+.titulo {
+    text-align: left;
+    font-size: 30px;
+    color: darkcyan;
+}
+
+#divmen {
+    text-align: right;
+    position: relative;
+    top: -70px;
+    left: -10px;
+    border-color: 3px red;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    font-size: large;
+    color: darkcyan;
+    margin: 15px;
+    padding: 5px;
+}
+
+/*.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+} */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+}
+
+.container .card {
+    width: 320px;
+    height: 420px;
+    border-radius: 9px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 13px 13px rgba(0,0,0,0.3);
+}
+
+.container .card img {
+    width: 320px;
+    height: 250px;
+}
+
+.container .card h4 {
+    font-weight: 600;
+}
+
+.container .card p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container .card a {
+    color: seagreen;
+}
+
